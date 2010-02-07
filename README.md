@@ -15,3 +15,4 @@ Then do `node-supervisor --help` to learn more.
 3. Be able to run more than one program, so that you can have two supervisors supervise each other, and then also keep some child server up.
 4. When watching, it'd be good to perhaps bring up a new child and then kill the old one gently, rather than just crashing the child abruptly.
 5. Keep the pid in a safe place, so another supervisor can pull it out if told to supervise the same program.
+6. It'd be pretty cool if this program could be run just like doing `node blah.js`, but could somehow "know" which files had been loaded, and restart whenever a touched file changes.
