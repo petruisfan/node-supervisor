@@ -1,0 +1,19 @@
+
+all: node-supervisor
+
+node-supervisor:
+	@! test -d build && mkdir build || true
+	@gcc -DNODE_BIN="\"@NODE_BIN@\"" -o build/node-supervisor src/node-supervisor.c
+	@echo "built"
+
+install:
+	@! test -d /usr/local/lib/node-supervisor && mkdir /usr/local/lib/node-supervisor || true
+	@cp lib/*.js /usr/local/lib/node-supervisor/
+	@cp build/node-supervisor /usr/local/bin/
+	@echo "installed"
+
+clean:
+	@test -d build  && rm -r build || true
+	@test -d /usr/local/lib/node-supervisor/ && rm -r /usr/local/lib/node-supervisor/ || true
+	@test -f /usr/local/bin/node-supervisor && rm /usr/local/bin/node-supervisor || true
+	@echo "cleaned"
