@@ -4,5 +4,6 @@
   "description" : "A supervisor program for running nodejs programs",
   "author" : "Isaac Z. Schlueter <i@izs.me>",
   "make" : "./configure && make && sudo make install",
-  "main" : "lib/supervisor"
+  "main" : "lib/supervisor",
+  "directories" : {"lib":"lib"}
 }
