@@ -1,9 +1,9 @@
-{
-  "name" : "supervisor",
-  "version" : "0.0.1",
-  "description" : "A supervisor program for running nodejs programs",
-  "author" : "Isaac Z. Schlueter <i@izs.me>",
-  "make" : "./configure && make && sudo make install",
-  "main" : "lib/supervisor",
-  "directories" : {"lib":"lib"}
+{ "name" : "supervisor"
+, "version" : "0.0.2"
+, "description" : "A supervisor program for running nodejs programs"
+, "author" : "Isaac Z. Schlueter <i@izs.me>"
+, "make" : "./configure && make && sudo make install"
+, "main" : "lib/supervisor"
+, "engines" : { "node" : ">=0.1.90" }
+, "directories" : { "lib" : "lib" }
 }
