@@ -6,8 +6,8 @@ int main (int argc, char** argv) {
   int i;
   argv2[0] = "node";
   argv2[1] = NODE_SUPERVISOR;
-  for (i = 0; i < argc; i++) {
-       argv2[i+2] = argv[i];           
+  for (i = 0; i <= argc; i++) {
+    argv2[i+2] = argv[i];           
   }
   return execv(
     NODE_BIN,
