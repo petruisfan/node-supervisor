@@ -2,6 +2,7 @@
 , "version" : "0.0.4"
 , "description" : "A supervisor program for running nodejs programs"
 , "author" : "Isaac Z. Schlueter <i@izs.me>"
+, "contributors" : [ "Brian Ehmann <behmann@gmail.com>" ]
 , "main" : "lib/supervisor"
 , "bin" : { "node-supervisor" : "lib/cli-wrapper.js" }
 , "engines" : { "node" : ">=0.1.90" }
