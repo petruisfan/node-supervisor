@@ -6,17 +6,19 @@ behavior, without worrying about memory leaks and making sure you
 clean up all the inter-module references, and without a whole new
 `require` system.
 
-## Easy install
+## Simple Install
 
 Install npm, and then do this:
 
     npm install supervisor
 
-## Fancy install
+You don't even need to download or fork this repo at all.
 
-Get the code.
+## Fancy Install
 
-    ./configure && make && sudo make install
+Get this code, install npm, and then do this:
+
+		npm link .
 
 ## todo
 
@@ -37,5 +39,3 @@ it out if told to supervise the same program.
 6. It'd be pretty cool if this program could be run just like
 doing `node blah.js`, but could somehow "know" which files had
 been loaded, and restart whenever a touched file changes.
-7. Remove the C stuff. Just do it all in js, and accept that
-shebang won't work in OS X.

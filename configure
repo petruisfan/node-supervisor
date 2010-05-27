@@ -1,3 +1,0 @@
-#!/bin/sh
-
-sed "s|@NODE_BIN@|$(which node)|g" < Makefile.src > Makefile
