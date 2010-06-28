@@ -6,6 +6,24 @@ behavior, without worrying about memory leaks and making sure you
 clean up all the inter-module references, and without a whole new
 `require` system.
 
+## node-supervisor -?
+
+    Supervisor is used to restart programs when they crash.
+    It can also be used to restart programs when a *.js file changes.
+    Usage:
+      supervisor [options]
+
+    Options:
+      -w|--watch <watchItems>
+        A comma delimited list of folders or js files to watch for changes.
+        When a change to a js file occurs, reload the program
+
+      -p|--program <program>
+        The program to run
+
+      -h|--help|-?
+        Help
+
 ## Simple Install
 
 Install npm, and then do this:
