@@ -36,7 +36,7 @@ You don't even need to download or fork this repo at all.
 
 Get this code, install npm, and then do this:
 
-		npm link .
+		npm link
 
 ## todo
 
