@@ -2,7 +2,7 @@
 , "version" : "0.0.6"
 , "description" : "A supervisor program for running nodejs programs"
 , "author" : "Isaac Z. Schlueter <i@izs.me>"
-, "contributors" : [ "Brian Ehmann <behmann@gmail.com>" ]
+, "contributors" : [ "Brian Ehmann <behmann@gmail.com>", "David Taylor <david@zensatellite.com>" ]
 , "main" : "lib/supervisor"
 , "bin" :
   { "node-supervisor" : "lib/cli-wrapper.js"
