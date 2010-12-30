@@ -1,12 +1,14 @@
 { "name" : "supervisor"
-, "version" : "0.0.6"
+, "version" : "0.1.0"
 , "description" : "A supervisor program for running nodejs programs"
 , "author" : "Isaac Z. Schlueter <i@izs.me>"
-, "contributors" : [ "Brian Ehmann <behmann@gmail.com>", "David Taylor <david@zensatellite.com>" ]
-, "main" : "lib/supervisor"
+, "contributors" : [ "Brian Ehmann <behmann@gmail.com>"
+                   , "David Taylor <david@zensatellite.com>"
+                   ]
+, "main" : "lib/supervisor.js"
 , "bin" :
   { "node-supervisor" : "lib/cli-wrapper.js"
   , "supervisor" : "lib/cli-wrapper.js"
   }
-, "engines" : { "node" : ">=0.1.90" }
+, "engines" : { "node" : "~0.2.3 || ~0.3" }
 }
