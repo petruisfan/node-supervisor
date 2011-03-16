@@ -8,21 +8,41 @@ clean up all the inter-module references, and without a whole new
 
 ## node-supervisor -?
 
-    Supervisor is used to restart programs when they crash.
+
+    Node Supervisor is used to restart programs when they crash.
     It can also be used to restart programs when a *.js file changes.
+
     Usage:
-      supervisor [options]
+      supervisor [options] <program>
+
+    Required:
+      <program>
+        The program to run.
 
     Options:
       -w|--watch <watchItems>
-        A comma delimited list of folders or js files to watch for changes.
+        A comma-delimited list of folders or js files to watch for changes.
         When a change to a js file occurs, reload the program
+        Default is '.'
 
-      -p|--program <program>
-        The program to run
+      -e|--extensions <extensions>
+        Specific file extensions to watch in addition to defaults.
+        Used when --watch option includes folders
+        Default is 'node|js'
+
+      -x|--exec <executable>
+        The executable that runs the specified program.
+        Default is 'node'
 
       -h|--help|-?
-        Help
+        Display these usage instructions.
+
+    Examples:
+      supervisor myapp.js
+      supervisor myapp.coffee
+      supervisor -w scripts -e myext -x myrunner myapp
+      supervisor -w lib -w server.js -w config.js server.js
+
 
 ## Simple Install
 
