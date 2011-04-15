@@ -1,9 +1,10 @@
 { "name" : "supervisor"
-, "version" : "0.1.1"
+, "version" : "0.1.2cj"
 , "description" : "A supervisor program for running nodejs programs"
 , "author" : "Isaac Z. Schlueter <i@izs.me>"
 , "contributors" : [ "Brian Ehmann <behmann@gmail.com>"
                    , "David Taylor <david@zensatellite.com>"
+                   , "Corey Jewett <cj@syntheticplayground.com>"
                    ]
 , "main" : "lib/supervisor.js"
 , "bin" :
