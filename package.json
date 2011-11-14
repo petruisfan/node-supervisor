@@ -6,6 +6,7 @@
                    , "David Taylor <david@zensatellite.com>"
                    , "Antonio Touriño <atourino@gmail.com>"
                    , "Ian Young <ian.greenleaf@gmail.com>"
+                   , "Corey Jewett <cj@syntheticplayground.com>"
                    ]
 , "main" : "lib/supervisor.js"
 , "bin" :
