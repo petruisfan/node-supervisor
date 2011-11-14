@@ -4,6 +4,7 @@
 , "author" : "Isaac Z. Schlueter <i@izs.me>"
 , "contributors" : [ "Brian Ehmann <behmann@gmail.com>"
                    , "David Taylor <david@zensatellite.com>"
+                   , "Antonio Touriño <atourino@gmail.com>"
                    ]
 , "main" : "lib/supervisor.js"
 , "bin" :
