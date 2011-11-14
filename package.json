@@ -5,6 +5,7 @@
 , "contributors" : [ "Brian Ehmann <behmann@gmail.com>"
                    , "David Taylor <david@zensatellite.com>"
                    , "Antonio Touriño <atourino@gmail.com>"
+                   , "Ian Young <ian.greenleaf@gmail.com>"
                    ]
 , "main" : "lib/supervisor.js"
 , "bin" :
