@@ -149,12 +149,12 @@ supervisor =
       supervisor.crash_queued = false
     ), 50
 
-    watchGivenFile : (watch, poll_interval) ->
-      fs.watchFile watch,
-        persistent: true
-        interval: poll_interval
-      , supervisor.crash
-  
+  watchGivenFile : (watch, poll_interval) ->
+    fs.watchFile watch,
+      persistent: true
+      interval: poll_interval
+    , supervisor.crash
+
   findAllWatchFiles : (path, callback) ->
     fs.stat path, (err, stats) ->
       if err
@@ -170,10 +170,4 @@ supervisor =
         else
           if path.match(supervisor.fileExtensionPattern)
             callback path
-
-
-
-
-
-
 
