@@ -30,7 +30,7 @@ exports.run = run = (args) ->
       # Assume last arg is the program
       program = arg
 
-  eturn help()  unless program
+  return help()  unless program
   watch = "."  unless watch
   poll_interval = 0  unless poll_interval
 
