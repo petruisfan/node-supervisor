@@ -174,4 +174,5 @@ findAllWatchFiles = (path, callback) ->
             fileNames.forEach (fileName) ->
               findAllWatchFiles path + "/" + fileName, callback
       else
-        callback path  if path.match(fileExtensionPattern)
+        if path.match(fileExtensionPattern)
+          callback path
