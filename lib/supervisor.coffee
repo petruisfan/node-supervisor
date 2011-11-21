@@ -75,47 +75,6 @@ exports.run = (args) ->
 supervisor =
   fileExtensionPattern : undefined
 
-  help : ->
-    util.print '''
-
-      Node Supervisor is used to restart programs when they crash.
-      It can also be used to restart programs when a *.js file changes.
-      
-      Usage:
-        supervisor [options] <program>
-      
-      Required:
-        <program>
-          The program to run.
-      
-      Options:
-        -w|--watch <watchItems>
-          A comma-delimited list of folders or js files to watch for changes.
-          When a change to a js file occurs, reload the program
-          Default is '.'
-      
-        -p|--poll-interval <milliseconds>
-          How often to poll watched files for changes.
-          Defaults to Node default.
-      
-        -e|--extensions <extensions>
-          Specific file extensions to watch in addition to defaults.
-          Used when --watch option includes folders
-          Default is 'node|js'
-      
-        -x|--exec <executable>
-          The executable that runs the specified program.
-          Default is 'node'
-      
-        -h|--help|-?
-          Display these usage instructions.
-      
-      Examples:
-        supervisor myapp.js
-        supervisor myapp.coffee
-        supervisor -w scripts -e myext -x myrunner myapp
-
-      '''
   startProgram : (prog, exec, args) ->
     if args
       util.debug "Starting child process with '#{exec} #{prog} #{args}'"
@@ -171,3 +130,44 @@ supervisor =
           if path.match(supervisor.fileExtensionPattern)
             callback path
 
+  help : ->
+    util.print '''
+
+      Node Supervisor is used to restart programs when they crash.
+      It can also be used to restart programs when a *.js file changes.
+      
+      Usage:
+        supervisor [options] <program>
+      
+      Required:
+        <program>
+          The program to run.
+      
+      Options:
+        -w|--watch <watchItems>
+          A comma-delimited list of folders or js files to watch for changes.
+          When a change to a js file occurs, reload the program
+          Default is '.'
+      
+        -p|--poll-interval <milliseconds>
+          How often to poll watched files for changes.
+          Defaults to Node default.
+      
+        -e|--extensions <extensions>
+          Specific file extensions to watch in addition to defaults.
+          Used when --watch option includes folders
+          Default is 'node|js'
+      
+        -x|--exec <executable>
+          The executable that runs the specified program.
+          Default is 'node'
+      
+        -h|--help|-?
+          Display these usage instructions.
+      
+      Examples:
+        supervisor myapp.js
+        supervisor myapp.coffee
+        supervisor -w scripts -e myext -x myrunner myapp
+
+      '''
