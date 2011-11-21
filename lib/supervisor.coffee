@@ -47,13 +47,7 @@ exports.run = (args) ->
   unless executor
     executor = if (programExt == "coffee") then "coffee" else "node"
 
-  util.puts ""
-  util.debug "Running node-supervisor with"
-  util.debug "  program '" + program + "'"
-  util.debug "  --watch '" + watch + "'"
-  util.debug "  --extensions '" + extensions + "'"
-  util.debug "  --exec '" + executor + "'"
-  util.puts ""
+  supervisor.startMsg {program:program, watch:watch, extensions:extensions, executor:executor}
 
   # if we have a program, then run it, and restart when it crashes.
   # if we have a watch folder, then watch the folder for changes and restart the prog
@@ -130,6 +124,14 @@ supervisor =
           if path.match(supervisor.fileExtensionPattern)
             callback path
 
+  startMsg : (msg)->
+    util.debug """
+      Running node-supervisor with
+        program '#{msg.program}'
+        --watch '#{msg.watch}'
+        --extensions '#{msg.extensions}'
+        --exec '#{msg.executor}'
+      """
   help : ->
     util.print '''
 
