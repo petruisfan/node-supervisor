@@ -33,6 +33,12 @@ clean up all the inter-module references, and without a whole new
       -x|--exec <executable>
         The executable that runs the specified program.
         Default is 'node'
+        
+      -r|--restart-on-error")
+        Will automatically restart the supervised program.
+        as soon as it ends unexpectedly with an exit code other than 0.
+        When not specified supervisor will wait for another change in the
+        source files, after the program crashed.
 
       -h|--help|-?
         Display these usage instructions.
