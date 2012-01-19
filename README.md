@@ -25,6 +25,9 @@ clean up all the inter-module references, and without a whole new
         When a change to a js file occurs, reload the program
         Default is '.'
 
+      -i|--ignore <ignoreDirectory>
+        Ignore changes within a particular directory
+
       -e|--extensions <extensions>
         Specific file extensions to watch in addition to defaults.
         Used when --watch option includes folders
@@ -47,6 +50,7 @@ clean up all the inter-module references, and without a whole new
       supervisor myapp.js
       supervisor myapp.coffee
       supervisor -w scripts -e myext -x myrunner myapp
+      supervisor -w scripts -i public -e myext -x myrunner myapp
       supervisor -w lib -w server.js -w config.js server.js
 
 
