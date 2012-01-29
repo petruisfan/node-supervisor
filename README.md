@@ -14,6 +14,7 @@ clean up all the inter-module references, and without a whole new
 
     Usage:
       supervisor [options] <program>
+      supervisor [options] -- <program> [args ...]
 
     Required:
       <program>
@@ -48,6 +49,7 @@ clean up all the inter-module references, and without a whole new
       supervisor myapp.coffee
       supervisor -w scripts -e myext -x myrunner myapp
       supervisor -w lib -w server.js -w config.js server.js
+      supervisor -- server.js -h host -p port
 
 
 ## Simple Install
