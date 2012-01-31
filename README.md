@@ -44,6 +44,9 @@ clean up all the inter-module references, and without a whole new
       -h|--help|-?
         Display these usage instructions.
 
+      -nd|--nodebug
+        Suppress DEBUG messages
+
     Examples:
       supervisor myapp.js
       supervisor myapp.coffee
@@ -73,15 +76,18 @@ backgrounded, and then disowned, the child will keep running. At
 that point, the supervisor may be killed, but the child will keep
 on running. It'd be nice to have two supervisors that kept each
 other up, and could also perhaps run a child program.
-2. Run more types of programs than just "node blargh.js".
+
 3. Be able to run more than one program, so that you can have two
 supervisors supervise each other, and then also keep some child
 server up.
+
 4. When watching, it'd be good to perhaps bring up a new child
 and then kill the old one gently, rather than just crashing the
 child abruptly.
+
 5. Keep the pid in a safe place, so another supervisor can pull
 it out if told to supervise the same program.
+
 6. It'd be pretty cool if this program could be run just like
 doing `node blah.js`, but could somehow "know" which files had
 been loaded, and restart whenever a touched file changes.
