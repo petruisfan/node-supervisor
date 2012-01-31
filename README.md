@@ -44,6 +44,9 @@ clean up all the inter-module references, and without a whole new
       -h|--help|-?
         Display these usage instructions.
 
+      -nd|--nodebug
+        Suppress DEBUG messages
+
     Examples:
       supervisor myapp.js
       supervisor myapp.coffee
