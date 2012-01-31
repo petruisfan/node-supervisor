@@ -48,7 +48,7 @@ clean up all the inter-module references, and without a whole new
       supervisor myapp.js
       supervisor myapp.coffee
       supervisor -w scripts -e myext -x myrunner myapp
-      supervisor -w lib -w server.js -w config.js server.js
+      supervisor -w lib,server.js,config.js server.js
       supervisor -- server.js -h host -p port
 
 
