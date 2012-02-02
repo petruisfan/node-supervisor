@@ -44,7 +44,7 @@ clean up all the inter-module references, and without a whole new
       -h|--help|-?
         Display these usage instructions.
 
-      -nd|--nodebug
+      -q|--quiet
         Suppress DEBUG messages
 
     Examples:
