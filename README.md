@@ -34,12 +34,12 @@ clean up all the inter-module references, and without a whole new
       -x|--exec <executable>
         The executable that runs the specified program.
         Default is 'node'
-        
-      -r|--restart-on-error")
-        Will automatically restart the supervised program.
-        as soon as it ends unexpectedly with an exit code other than 0.
-        When not specified supervisor will wait for another change in the
-        source files, after the program crashed.
+
+      -n|--no-restart-on error|exit
+        Don't automatically restart the supervised program if it ends.
+        Supervisor will wait for a change in the source files.
+        If "error", an exit code of 0 will still restart.
+        If "exit", no restart regardless of exit code.
 
       -h|--help|-?
         Display these usage instructions.
