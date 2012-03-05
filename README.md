@@ -9,50 +9,55 @@ clean up all the inter-module references, and without a whole new
 ## node-supervisor -?
 
 
-    Node Supervisor is used to restart programs when they crash.
-    It can also be used to restart programs when a *.js file changes.
-
-    Usage:
-      supervisor [options] <program>
-      supervisor [options] -- <program> [args ...]
-
-    Required:
-      <program>
-        The program to run.
-
-    Options:
-      -w|--watch <watchItems>
-        A comma-delimited list of folders or js files to watch for changes.
-        When a change to a js file occurs, reload the program
-        Default is '.'
-
-      -e|--extensions <extensions>
-        Specific file extensions to watch in addition to defaults.
-        Used when --watch option includes folders
-        Default is 'node|js'
-
-      -x|--exec <executable>
-        The executable that runs the specified program.
-        Default is 'node'
-
-      -n|--no-restart-on error|exit
-        Don't automatically restart the supervised program if it ends.
-        Supervisor will wait for a change in the source files.
-        If "error", an exit code of 0 will still restart.
-        If "exit", no restart regardless of exit code.
-
-      -h|--help|-?
-        Display these usage instructions.
-
-      -q|--quiet
-        Suppress DEBUG messages
-
-    Examples:
-      supervisor myapp.js
-      supervisor myapp.coffee
-      supervisor -w scripts -e myext -x myrunner myapp
-      supervisor -w lib,server.js,config.js server.js
-      supervisor -- server.js -h host -p port
+	Node Supervisor is used to restart programs when they crash.
+	It can be used to restart programs when a *.js file changes.
+	
+	Usage:
+	  supervisor [options] <program>
+	  supervisor [options] -- <program> [args ...]
+	
+	Recommended:
+	  supervisor server.js
+	  Defaults: --no-restart-on error, watches only your <program.js> file be default.
+	
+	Options:
+	  --watch <list of files/folders>
+	    A comma-seperated list of folders or js files to watch for changes.
+	    When a change to a js file occurs, the server restarts
+	    Defaults to watching your server.js file (whatever the file may be called). -w shortcut
+	
+	  --poll-interval <milliseconds>
+	    How often to poll watched files for changes.
+	    Defaults to 100 milliseconds (node default) -p shortcut
+	
+	  --extensions <file extensions>
+	    Specific file extensions to watch in addition to defaults.
+	    Used when --watch option includes folders
+	    Default is 'node|js' -e shortcut
+	
+	  --exec <executable>
+	    The executable that runs the specified program.
+	    Default is 'node' -x shortcut
+	
+	  --no-restart-on-exit
+	    Never automatically restart the server, regardless of exit code.
+	    -n shortcut (don't forget exit)
+	
+	  --keep-restarting
+	    Whenever the server dies, restart it. May result in the server infinitely restarting.
+	
+	  --help
+	    Display these usage instructions. -h or -? shortcut
+	
+	  --debug
+	    Show DEBUG messages. -d shortcut
+	
+	Examples:
+	  supervisor myapp.js
+	  supervisor myapp.coffee
+	  supervisor -w scripts -e myext -x myrunner myapp
+	  supervisor -- server.js -h host -p port
+	  supervisor -w server.js --no-restart-on error server.js
 
 
 ## Simple Install
