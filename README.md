@@ -40,6 +40,12 @@ clean up all the inter-module references, and without a whole new
         Supervisor will wait for a change in the source files.
         If "error", an exit code of 0 will still restart.
         If "exit", no restart regardless of exit code.
+        
+      -d|--debug
+        Start node with --debug flag.
+        
+      -k|--debug-brk
+        Start node with --debug-brk flag.
 
       -h|--help|-?
         Display these usage instructions.
