@@ -1,7 +1,7 @@
 { "name" : "supervisor"
 , "version" : "0.3.2"
 , "repository": {
-  "type": "git
+  "type": "git"
   , "url": "git://github.com/isaacs/node-supervisor.git"
 }
 , "description" : "A supervisor program for running nodejs programs"
