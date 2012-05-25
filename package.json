@@ -1,17 +1,27 @@
 { "name" : "supervisor"
-, "version" : "0.3.2"
-, "repository": {
-  "type": "git"
-  , "url": "git://github.com/isaacs/node-supervisor.git"
-}
+, "version" : "0.3.3"
 , "description" : "A supervisor program for running nodejs programs"
 , "author" : "Isaac Z. Schlueter <i@izs.me>"
-, "contributors" : [ "Brian Ehmann <behmann@gmail.com>"
-                   , "David Taylor <david@zensatellite.com>"
-                   , "Antonio Touriño <atourino@gmail.com>"
-                   , "Ian Young <ian.greenleaf@gmail.com>"
-                   , "Corey Jewett <cj@syntheticplayground.com>"
-                   ]
+, "contributors" :
+  [ "Todd Branchflower <toddbran@stanford.edu>"
+  , "Brian Ehmann <behmann@gmail.com>"
+  , "Corey Jewett <cj@syntheticplayground.com>"
+  , "Taka Kojima <taka.kojima@ff0000.com>"
+  , "Jonathan 'Wolf' Rentzsch <jwr.git@redshed.net>"
+  , "Scott Sanders <scott@stonecobra.com>"
+  , "Fernando H. Silva <ferhensil@gmail.com>"
+  , "David Taylor <david@zensatellite.com>"
+  , "Antonio Touriño <atourino@gmail.com>"
+  , "Ian Young <ian.greenleaf@gmail.com>"
+  , "jazzzz <jazzzz@gmail.com>"
+  , "rma4ok <rma4ok@gmail.com>"
+  ]
+, "repository":
+  { "type": "git"
+  , "url": "git://github.com/isaacs/node-supervisor.git"
+  }
+, "bugs": "https://github.com/isaacs/node-supervisor/issues"
+, "homepage": "https://github.com/isaacs/node-supervisor/"
 , "main" : "lib/supervisor.js"
 , "bin" :
   { "node-supervisor" : "lib/cli-wrapper.js"
