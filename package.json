@@ -1,5 +1,9 @@
 { "name" : "supervisor"
 , "version" : "0.3.2"
+, "repository": {
+  "type": "git
+  , "url": "git://github.com/isaacs/node-supervisor.git"
+}
 , "description" : "A supervisor program for running nodejs programs"
 , "author" : "Isaac Z. Schlueter <i@izs.me>"
 , "contributors" : [ "Brian Ehmann <behmann@gmail.com>"
