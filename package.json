@@ -1,5 +1,5 @@
 { "name" : "supervisor"
-, "version" : "0.3.6"
+, "version" : "0.4.0"
 , "description" : "A supervisor program for running nodejs programs"
 , "author" : "Isaac Z. Schlueter <i@izs.me>"
 , "contributors" :
@@ -12,6 +12,7 @@
   , "Fernando H. Silva <ferhensil@gmail.com>"
   , "David Taylor <david@zensatellite.com>"
   , "Antonio Touriño <atourino@gmail.com>"
+  , "Oliver Wong <oliver@owiber.com>"
   , "Ian Young <ian.greenleaf@gmail.com>"
   , "Giannis Dzegoutanis <erasmospunk@gmail.com>"
   , "jazzzz <jazzzz@gmail.com>"
