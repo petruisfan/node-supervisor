@@ -29,6 +29,6 @@
   { "node-supervisor" : "lib/cli-wrapper.js"
   , "supervisor" : "lib/cli-wrapper.js"
   }
-, "engines" : { "node" : ">=0.3.7 <0.9" }
+, "engines" : { "node" : ">=0.3.7" }
 , "preferGlobal" : true
 }
