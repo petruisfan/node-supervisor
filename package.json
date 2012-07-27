@@ -22,6 +22,10 @@
   { "type": "git"
   , "url": "git://github.com/isaacs/node-supervisor.git"
   }
+,
+  "dependencies": {
+    "socket.io": ">=0.9.8"
+  }
 , "bugs": "https://github.com/isaacs/node-supervisor/issues"
 , "homepage": "https://github.com/isaacs/node-supervisor/"
 , "main" : "lib/supervisor.js"
