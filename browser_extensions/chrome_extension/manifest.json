@@ -1,0 +1,17 @@
+{
+    "name": "Chrome Auto Reloader",
+    "version": "1.0.0.0",
+    "manifest_version": 2,
+    "description": "Chrome Auto Reloader",
+    "browser_action": {
+        "default_icon": "icon_blue.png",
+        "default_title": "Chrome Auto Reloader"
+    },
+    "permissions": [
+        "tabs",
+        "<all_urls>"
+    ],
+    "background": {
+        "scripts": ["socket.io.js", "background.js"]
+    }
+}
