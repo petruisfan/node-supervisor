@@ -4,7 +4,7 @@
     "manifest_version": 2,
     "description": "Chrome Auto Reloader",
     "browser_action": {
-        "default_icon": "icon_blue.png",
+        "default_icon": "icon_green.png",
         "default_title": "Chrome Auto Reloader"
     },
     "permissions": [
