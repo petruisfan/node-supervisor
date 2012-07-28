@@ -41,6 +41,13 @@ clean up all the inter-module references, and without a whole new
         If "error", an exit code of 0 will still restart.
         If "exit", no restart regardless of exit code.
 
+      -b|--browser-refresher
+        Adds support for auto reloading browser tabs through some
+        companion browser entensions
+        Currently only google chrome is supported
+        The extension sorce and packaged versions can be found in the
+        'browser_extensions' folder
+
       -h|--help|-?
         Display these usage instructions.
 
