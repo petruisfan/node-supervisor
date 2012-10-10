@@ -35,6 +35,12 @@ clean up all the inter-module references, and without a whole new
         The executable that runs the specified program.
         Default is 'node'
 
+      --debug
+        Start node with --debug flag.
+
+      --debug-brk
+        Start node with --debug-brk flag.
+
       -n|--no-restart-on error|exit
         Don't automatically restart the supervised program if it ends.
         Supervisor will wait for a change in the source files.
