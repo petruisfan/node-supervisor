@@ -9,56 +9,66 @@ clean up all the inter-module references, and without a whole new
 ## node-supervisor -?
 
 
-    Node Supervisor is used to restart programs when they crash.
-    It can also be used to restart programs when a *.js file changes.
+	Node Supervisor is used to restart programs when they crash.
+	It can also be used to restart programs when a *.js file changes.
 
-    Usage:
-      supervisor [options] <program>
-      supervisor [options] -- <program> [args ...]
+	Usage:
+		supervisor [options] <program>
+		supervisor [options] -- <program> [args ...]
 
-    Required:
-      <program>
-        The program to run.
+	Required:
+		<program>
+			The program to run.
 
-    Options:
-      -w|--watch <watchItems>
-        A comma-delimited list of folders or js files to watch for changes.
-        When a change to a js file occurs, reload the program
-        Default is '.'
+	Options:
+		-w|--watch <watchItems>
+			A comma-delimited list of folders or js files to watch for changes.
+			When a change to a js file occurs, reload the program
+			Default is '.'
 
-      -e|--extensions <extensions>
-        Specific file extensions to watch in addition to defaults.
-        Used when --watch option includes folders
-        Default is 'node|js'
+		-i|--ignore <ignoreItems>
+			A comma-delimited list of folders to ignore for changes.
+			No default
 
-      -x|--exec <executable>
-        The executable that runs the specified program.
-        Default is 'node'
+		-p|--poll-interval <milliseconds>
+			How often to poll watched files for changes.
+			Defaults to Node default.
 
-      --debug
-        Start node with --debug flag.
+		-e|--extensions <extensions>
+			Specific file extensions to watch in addition to defaults.
+			Used when --watch option includes folders
+			Default is 'node|js'
 
-      --debug-brk
-        Start node with --debug-brk flag.
+		-x|--exec <executable>
+			The executable that runs the specified program.
+			Default is 'node'
 
-      -n|--no-restart-on <error|exit>
-        Don't automatically restart the supervised program if it ends.
-        Supervisor will wait for a change in the source files.
-        If "error", an exit code of 0 will still restart.
-        If "exit", no restart regardless of exit code.
+		--debug
+			Start node with --debug flag.
 
-      -h|--help|-?
-        Display these usage instructions.
+		--debug-brk
+			Start node with --debug-brk flag.
 
-      -q|--quiet
-        Suppress DEBUG messages
+		-n|--no-restart-on error|exit
+			Don't automatically restart the supervised program if it ends.
+			Supervisor will wait for a change in the source files.
+			If "error", an exit code of 0 will still restart.
+			If "exit", no restart regardless of exit code.
 
-    Examples:
-      supervisor myapp.js
-      supervisor myapp.coffee
-      supervisor -w scripts -e myext -x myrunner myapp
-      supervisor -w lib,server.js,config.js server.js
-      supervisor -- server.js -h host -p port
+		-h|--help|-?
+			Display these usage instructions.
+
+		-q|--quiet
+			Suppress DEBUG messages
+
+		-V|--verbose
+			Show extra DEBUG messages
+
+Examples:
+	supervisor myapp.js
+	supervisor myapp.coffee
+	supervisor -w scripts -e myext -x myrunner myapp
+	supervisor -- server.js -h host -p port
 
 
 ## Simple Install
