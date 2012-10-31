@@ -26,6 +26,14 @@ clean up all the inter-module references, and without a whole new
         When a change to a js file occurs, reload the program
         Default is '.'
 
+      -i|--ignore <ignoreItems>
+        A comma-delimited list of folders to ignore for changes.
+        No default
+
+      -p|--poll-interval <milliseconds>
+        How often to poll watched files for changes.
+        Defaults to Node default.
+
       -e|--extensions <extensions>
         Specific file extensions to watch in addition to defaults.
         Used when --watch option includes folders
@@ -41,7 +49,7 @@ clean up all the inter-module references, and without a whole new
       --debug-brk
         Start node with --debug-brk flag.
 
-      -n|--no-restart-on <error|exit>
+      -n|--no-restart-on error|exit
         Don't automatically restart the supervised program if it ends.
         Supervisor will wait for a change in the source files.
         If "error", an exit code of 0 will still restart.
