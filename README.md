@@ -55,6 +55,10 @@ clean up all the inter-module references, and without a whole new
         If "error", an exit code of 0 will still restart.
         If "exit", no restart regardless of exit code.
 
+      --force-watch
+        Use fs.watch instead of fs.watchFile.
+        This may be useful if you see a high cpu load on a windows machine.
+
       -h|--help|-?
         Display these usage instructions.
 
