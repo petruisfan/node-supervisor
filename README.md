@@ -35,7 +35,7 @@ clean up all the inter-module references, and without a whole new
         Defaults to Node default.
 
       -e|--extensions <extensions>
-        Specific file extensions to watch in addition to defaults.
+        A comma-delimited list of file extensions to watch for changes.
         Used when --watch option includes folders
         Default is 'node|js'
 
