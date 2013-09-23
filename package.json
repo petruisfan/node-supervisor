@@ -1,5 +1,5 @@
 { "name" : "supervisor"
-, "version" : "0.5.5"
+, "version" : "0.5.6"
 , "description" : "A supervisor program for running nodejs programs"
 , "author" : "Isaac Z. Schlueter <i@izs.me>"
 , "contributors" :
@@ -12,6 +12,7 @@
   , "Doug McCall <dhm116@psu.edu>"
   , "Mathieu M-Gosselin <mathieumg@gmail.com>"
   , "David Murdoch <hello@davidmurdoch.com>"
+  , "mx1700 <mx1700@gmail.com>"
   , "Michiel ter Reehorst <jm.ter.reehorst@jamiter.com>"
   , "Jonathan 'Wolf' Rentzsch <jwr.git@redshed.net>"
   , "John Roberts <jroberts@logitech.com>"
