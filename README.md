@@ -78,14 +78,12 @@ clean up all the inter-module references, and without a whole new
 
 ## Simple Install
 
-Install npm, and then do this:
+Just run:
 
     npm install supervisor -g
 
-You don't even need to download or fork this repo at all.
-
 ## Fancy Install
 
-Get this code, install npm, and then do this:
+Get this code, and then do this:
 
     npm link
