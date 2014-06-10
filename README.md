@@ -36,8 +36,7 @@ clean up all the inter-module references, and without a whole new
 
       -e|--extensions <extensions>
         A comma-delimited list of file extensions to watch for changes.
-        Used when --watch option includes folders
-        Default is 'node,js'
+        Default is 'node,js' (or when CoffeeScript, 'node,js,coffee,litcoffee').
 
       -x|--exec <executable>
         The executable that runs the specified program.
