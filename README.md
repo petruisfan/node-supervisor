@@ -1,3 +1,6 @@
+***Note:*** **This project is currently unmaintained.**
+Please get in touch if you're interested in taking over maintenance.
+
 # node-supervisor
 
 A little supervisor script for nodejs. It runs your program, and
