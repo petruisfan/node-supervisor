@@ -29,13 +29,14 @@
   , "jazzzz <jazzzz@gmail.com>"
   , "philpill <github@philpill.net>"
   , "rma4ok <rma4ok@gmail.com>"
+  , "Petru Isfan <petru.isfan@gmail.com>"
   ]
 , "repository":
   { "type": "git"
-  , "url": "git://github.com/isaacs/node-supervisor.git"
+  , "url": "git://github.com/petruisfan/node-supervisor.git"
   }
-, "bugs": "https://github.com/isaacs/node-supervisor/issues"
-, "homepage": "https://github.com/isaacs/node-supervisor/"
+, "bugs": "https://github.com/petruisfan/node-supervisor/issues"
+, "homepage": "https://github.com/petruisfan/node-supervisor/"
 , "main" : "lib/supervisor.js"
 , "bin" :
   { "node-supervisor" : "lib/cli-wrapper.js"
