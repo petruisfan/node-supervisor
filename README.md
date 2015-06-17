@@ -66,6 +66,12 @@ clean up all the inter-module references, and without a whole new
 
       -q|--quiet
         Suppress DEBUG messages
+   
+ 
+    Options available after start:
+      rs - restart process. Useful when you want to restart your program eaven 
+           if no file has changed.
+
 
     Examples:
       supervisor myapp.js
