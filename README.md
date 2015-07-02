@@ -42,6 +42,9 @@ clean up all the inter-module references, and without a whole new
         The executable that runs the specified program.
         Default is 'node'
 
+      -pid|--save-pid <path>
+        Save supervisor's process id to a file at the given path.
+
       --debug
         Start node with --debug flag.
 
