@@ -72,7 +72,7 @@ clean up all the inter-module references, and without a whole new
    
  
     Options available after start:
-      rs - restart process. Useful when you want to restart your program eaven 
+      rs - restart process. Useful when you want to restart your program even 
            if no file has changed.
 
 
