@@ -42,6 +42,9 @@ clean up all the inter-module references, and without a whole new
         The executable that runs the specified program.
         Default is 'node'
 
+      -pid|--save-pid <path>
+        Save supervisor's process id to a file at the given path.
+
       --debug
         Start node with --debug flag.
 
@@ -66,6 +69,12 @@ clean up all the inter-module references, and without a whole new
 
       -q|--quiet
         Suppress DEBUG messages
+   
+ 
+    Options available after start:
+      rs - restart process. Useful when you want to restart your program even 
+           if no file has changed.
+
 
     Examples:
       supervisor myapp.js
