@@ -60,6 +60,10 @@ clean up all the inter-module references, and without a whole new
         If "error", an exit code of 0 will still restart.
         If "exit", no restart regardless of exit code.
 
+    -t|--non-interactive
+        Dissable interactive capacity
+        With this option, supervisor won't listen to stdin
+
       --force-watch
         Use fs.watch instead of fs.watchFile.
         This may be useful if you see a high cpu load on a windows machine.
@@ -69,10 +73,10 @@ clean up all the inter-module references, and without a whole new
 
       -q|--quiet
         Suppress DEBUG messages
-   
- 
+
+
     Options available after start:
-      rs - restart process. Useful when you want to restart your program even 
+      rs - restart process. Useful when you want to restart your program even
            if no file has changed.
 
 
@@ -83,6 +87,8 @@ clean up all the inter-module references, and without a whole new
       supervisor -w lib,server.js,config.js server.js
       supervisor -- server.js -h host -p port
 
+
+In order to not watch for file changes, use "-i .".
 
 ## Simple Install
 
