@@ -1,47 +1,50 @@
-{ "name" : "supervisor"
-, "version" : "0.8.0"
-, "description" : "A supervisor program for running nodejs programs"
-, "author" : "Isaac Z. Schlueter <i@izs.me>"
-, "contributors" :
-  [ "Todd Branchflower <toddbran@stanford.edu>"
-  , "Giannis Dzegoutanis <erasmospunk@gmail.com>"
-  , "Brian Ehmann <behmann@gmail.com>"
-  , "Corey Jewett <cj@syntheticplayground.com>"
-  , "Taka Kojima <taka.kojima@ff0000.com>"
-  , "Aneil Mallavarapu <aneil@blipboard.com>"
-  , "Doug McCall <dhm116@psu.edu>"
-  , "Mathieu M-Gosselin <mathieumg@gmail.com>"
-  , "David Murdoch <hello@davidmurdoch.com>"
-  , "mx1700 <mx1700@gmail.com>"
-  , "Michiel ter Reehorst <jm.ter.reehorst@jamiter.com>"
-  , "Jonathan 'Wolf' Rentzsch <jwr.git@redshed.net>"
-  , "John Roberts <jroberts@logitech.com>"
-  , "Scott Sanders <scott@stonecobra.com>"
-  , "Thomas Schaaf <schaaf@komola.de>"
-  , "Fernando H. Silva <ferhensil@gmail.com>"
-  , "Kei Son <heyacct@gmail.com>"
-  , "David Taylor <david@zensatellite.com>"
-  , "Antonio Touriño <atourino@gmail.com>"
-  , "Oliver Wong <oliver@owiber.com>"
-  , "Di Wu <dw323@cornell.edu>"
-  , "Jesse Yang <jyyjcc@gmail.com>"
-  , "Ian Young <ian.greenleaf@gmail.com>"
-  , "jazzzz <jazzzz@gmail.com>"
-  , "philpill <github@philpill.net>"
-  , "rma4ok <rma4ok@gmail.com>"
-  , "Petru Isfan <petru.isfan@gmail.com>"
-  ]
-, "repository":
-  { "type": "git"
-  , "url": "git://github.com/petruisfan/node-supervisor.git"
-  }
-, "bugs": "https://github.com/petruisfan/node-supervisor/issues"
-, "homepage": "https://github.com/petruisfan/node-supervisor/"
-, "main" : "lib/supervisor.js"
-, "bin" :
-  { "node-supervisor" : "lib/cli-wrapper.js"
-  , "supervisor" : "lib/cli-wrapper.js"
-  }
-, "engines" : { "node" : ">=0.6.0" }
-, "preferGlobal" : true
+{
+  "name": "supervisor",
+  "version": "0.9.0",
+  "description": "A supervisor program for running nodejs programs",
+  "author": "Isaac Z. Schlueter <i@izs.me>",
+  "contributors": [
+    "Todd Branchflower <toddbran@stanford.edu>",
+    "Giannis Dzegoutanis <erasmospunk@gmail.com>",
+    "Brian Ehmann <behmann@gmail.com>",
+    "Corey Jewett <cj@syntheticplayground.com>",
+    "Taka Kojima <taka.kojima@ff0000.com>",
+    "Aneil Mallavarapu <aneil@blipboard.com>",
+    "Doug McCall <dhm116@psu.edu>",
+    "Mathieu M-Gosselin <mathieumg@gmail.com>",
+    "David Murdoch <hello@davidmurdoch.com>",
+    "mx1700 <mx1700@gmail.com>",
+    "Michiel ter Reehorst <jm.ter.reehorst@jamiter.com>",
+    "Jonathan 'Wolf' Rentzsch <jwr.git@redshed.net>",
+    "John Roberts <jroberts@logitech.com>",
+    "Scott Sanders <scott@stonecobra.com>",
+    "Thomas Schaaf <schaaf@komola.de>",
+    "Fernando H. Silva <ferhensil@gmail.com>",
+    "Kei Son <heyacct@gmail.com>",
+    "David Taylor <david@zensatellite.com>",
+    "Antonio Touriño <atourino@gmail.com>",
+    "Oliver Wong <oliver@owiber.com>",
+    "Di Wu <dw323@cornell.edu>",
+    "Jesse Yang <jyyjcc@gmail.com>",
+    "Ian Young <ian.greenleaf@gmail.com>",
+    "jazzzz <jazzzz@gmail.com>",
+    "philpill <github@philpill.net>",
+    "rma4ok <rma4ok@gmail.com>",
+    "Petru Isfan <petru.isfan@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/petruisfan/node-supervisor.git"
+  },
+  "bugs": "https://github.com/petruisfan/node-supervisor/issues",
+  "homepage": "https://github.com/petruisfan/node-supervisor/",
+  "main": "lib/supervisor.js",
+  "bin": {
+    "node-supervisor": "lib/cli-wrapper.js",
+    "supervisor": "lib/cli-wrapper.js"
+  },
+  "engines": {
+    "node": ">=0.6.0"
+  },
+  "preferGlobal": true
 }
