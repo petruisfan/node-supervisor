@@ -46,5 +46,11 @@
   "engines": {
     "node": ">=0.6.0"
   },
-  "preferGlobal": true
+  "scripts": {
+    "test": "./node_modules/nodeunit/bin/nodeunit test/*.test.js"
+  },
+  "preferGlobal": true,
+  "devDependencies": {
+    "nodeunit": "~0.9.0"
+  }  
 }
