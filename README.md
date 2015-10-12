@@ -45,10 +45,10 @@ clean up all the inter-module references, and without a whole new
       -pid|--save-pid <path>
         Save supervisor's process id to a file at the given path.
 
-      --debug
+      --debug[=port]
         Start node with --debug flag.
 
-      --debug-brk
+      --debug-brk[=port]
         Start node with --debug-brk flag.
 
       --harmony
@@ -67,7 +67,7 @@ clean up all the inter-module references, and without a whole new
       --force-watch
         Use fs.watch instead of fs.watchFile.
         This may be useful if you see a high cpu load on a windows machine.
-		
+
 	  --instant-kill
 	    Instantly kills the server process, instead of gracefully shutting down the server.
 		This can be useful when the node app has events attached to SIGTERM or SIGINT so as to do a graceful shutdown before the process exits.
