@@ -54,11 +54,12 @@ clean up all the inter-module references, and without a whole new
       --harmony
         Start node with --harmony flag.
 
-      -n|--no-restart-on error|exit
+      -n|--no-restart-on error|exit|success
         Don't automatically restart the supervised program if it ends.
         Supervisor will wait for a change in the source files.
         If "error", an exit code of 0 will still restart.
         If "exit", no restart regardless of exit code.
+        If "success", no restart only if exit code is 0.
 
     -t|--non-interactive
         Dissable interactive capacity
