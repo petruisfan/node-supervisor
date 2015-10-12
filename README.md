@@ -30,6 +30,9 @@ clean up all the inter-module references, and without a whole new
         A comma-delimited list of folders to ignore for changes.
         No default
 
+      --ignore-symlinks
+        Ignore symlinks :)
+
       -p|--poll-interval <milliseconds>
         How often to poll watched files for changes.
         Defaults to Node default.
