@@ -75,6 +75,9 @@ clean up all the inter-module references, and without a whole new
 	  --instant-kill
 	    Instantly kills the server process, instead of gracefully shutting down the server.
 		This can be useful when the node app has events attached to SIGTERM or SIGINT so as to do a graceful shutdown before the process exits.
+		
+     -RV|--restart-verbose
+        Logs the file(s) that caused supervisor to restart
 
       -h|--help|-?
         Display these usage instructions.
