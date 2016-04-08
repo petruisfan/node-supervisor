@@ -32,7 +32,11 @@ clean up all the inter-module references, and without a whole new
 
       --ignore-symlinks
         Ignore symlinks :)
-
+        
+      -s|--timestamp
+        Log timestamp after each run.
+        Make it easy to tell when the task last ran.
+        
       -p|--poll-interval <milliseconds>
         How often to poll watched files for changes.
         Defaults to Node default.
