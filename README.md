@@ -76,7 +76,7 @@ clean up all the inter-module references, and without a whole new
         Use fs.watch instead of fs.watchFile.
         This may be useful if you see a high cpu load on a windows machine.
 
-	  --instant-kill
+	  -k|--instant-kill
 	    Instantly kills the server process, instead of gracefully shutting down the server.
 		This can be useful when the node app has events attached to SIGTERM or SIGINT so as to do a graceful shutdown before the process exits.
 		
