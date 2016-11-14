@@ -61,6 +61,9 @@ clean up all the inter-module references, and without a whole new
       --harmony
         Start node with --harmony flag.
 
+      --inspect
+        Start node with --inspect flag.
+
       -n|--no-restart-on error|exit|success
         Don't automatically restart the supervised program if it ends.
         Supervisor will wait for a change in the source files.
