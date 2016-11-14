@@ -1,6 +1,6 @@
 {
   "name": "supervisor",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "description": "A supervisor program for running nodejs programs",
   "author": "Isaac Z. Schlueter <i@izs.me>",
   "license": "MIT",
@@ -53,5 +53,5 @@
   "preferGlobal": true,
   "devDependencies": {
     "nodeunit": "~0.9.0"
-  }  
+  }
 }
