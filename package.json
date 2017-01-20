@@ -4,6 +4,11 @@
   "description": "A supervisor program for running nodejs programs",
   "author": "Isaac Z. Schlueter <i@izs.me>",
   "license": "MIT",
+  "keywords": [
+  	"supervisor",
+	"nodejs",
+	"node-supervisor"
+  ],
   "contributors": [
     "Todd Branchflower <toddbran@stanford.edu>",
     "Giannis Dzegoutanis <erasmospunk@gmail.com>",
@@ -31,7 +36,8 @@
     "jazzzz <jazzzz@gmail.com>",
     "philpill <github@philpill.net>",
     "rma4ok <rma4ok@gmail.com>",
-    "Petru Isfan <petru.isfan@gmail.com>"
+    "Petru Isfan <petru.isfan@gmail.com>",
+    "Christopher Singh <cgsingh@myseneca.ca"
   ],
   "repository": {
     "type": "git",
