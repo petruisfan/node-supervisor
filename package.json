@@ -5,9 +5,9 @@
   "author": "Isaac Z. Schlueter <i@izs.me>",
   "license": "MIT",
   "keywords": [
-  	"supervisor",
-	"nodejs",
-	"node-supervisor"
+    "supervisor",
+    "nodejs",
+    "node-supervisor"
   ],
   "contributors": [
     "Todd Branchflower <toddbran@stanford.edu>",
@@ -37,7 +37,7 @@
     "philpill <github@philpill.net>",
     "rma4ok <rma4ok@gmail.com>",
     "Petru Isfan <petru.isfan@gmail.com>",
-    "Christopher Singh <cgsingh@myseneca.ca"
+    "Christopher Singh <cgsingh@myseneca.ca>"
   ],
   "repository": {
     "type": "git",
