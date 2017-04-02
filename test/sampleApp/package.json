@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Petru Isfan",
-  "license": "Apache2",
+  "license": "Apache-2.0",
   "dependencies": {
     "express": "^4.12.3"
   }
