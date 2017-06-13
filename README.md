@@ -61,7 +61,7 @@ clean up all the inter-module references, and without a whole new
       --harmony
         Start node with --harmony flag.
 
-      --inspect
+      --inspect[=port]
         Start node with --inspect flag.
 
       -n|--no-restart-on error|exit|success
