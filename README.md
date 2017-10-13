@@ -61,6 +61,9 @@ clean up all the inter-module references, and without a whole new
       --harmony
         Start node with --harmony flag.
 
+      --harmony-proxies
+        Start node with --harmony-proxies flag.
+
       --inspect
         Start node with --inspect flag.
 
