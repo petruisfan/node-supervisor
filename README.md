@@ -52,6 +52,9 @@ clean up all the inter-module references, and without a whole new
       -pid|--save-pid <path>
         Save supervisor's process id to a file at the given path.
 
+      --flags
+        Start with flags, separate several values by comma
+
       --debug[=port]
         Start node with --debug flag.
 
